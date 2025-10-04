@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie API</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .endpoint { background: #f0f0f0; padding: 15px; margin: 15px 0; border-radius: 8px; }
+        .method { color: blue; font-weight: bold; }
+        .url { color: green; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <h1>Movie API</h1>
+    <p>Simple movie API using OMDB data. Here's what you can do:</p>
+    
+    <div class="endpoint">
+        <h3>Get Movie Details</h3>
+        <p><span class="method">GET</span> <span class="url">/api/movie/?title=The Matrix</span></p>
+        <p>Get info about a movie by its title</p>
+    </div>
+
+    <div class="endpoint">
+        <h3>Get TV Episode Info</h3>
+        <p><span class="method">GET</span> <span class="url">/api/episode/?series_title=Breaking Bad&season=1&episode_number=1</span></p>
+        <p>Get details about a specific TV episode</p>
+    </div>
+
+    <div class="endpoint">
+        <h3>Find Movies by Genre</h3>
+        <p><span class="method">GET</span> <span class="url">/api/movies/genre/?genre=Action</span></p>
+        <p>Get top 15 movies in a genre, sorted by rating</p>
+    </div>
+
+    <p><strong>Note:</strong> All responses are in JSON format</p>
+</body>
+</html>
